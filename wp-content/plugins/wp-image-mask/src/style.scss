@@ -1,0 +1,67 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-image, .wp-image-mask {
+    &.has-image-mask, .has-image-mask {
+        img {
+            mask-position: center center;
+            -webkit-mask-position: center center;
+            mask-repeat: no-repeat;
+            -webkit-mask-repeat: no-repeat;
+            mask-size: contain;
+            -webkit-mask-size: contain;
+        }
+        &.has-image-mask-cover-fit {
+            img {
+                mask-size: cover;
+                -webkit-mask-size: cover;
+            }
+        }
+        &.has-image-mask-contain-fit {
+            img {
+                mask-size: contain;
+                -webkit-mask-size: contain;
+            }
+        }
+        &.has-image-mask-auto-fit {
+            img {
+                mask-size: auto;
+                -webkit-mask-size: auto;
+            }
+        }
+        &.has-circle-image-mask {
+            img {
+                mask-image: url(../src/img/circle.svg);
+                -webkit-mask-image: url(../src/img/circle.svg);
+            }
+        }
+        &.has-triangle-image-mask {
+            img {
+                mask-image: url(../src/img/triangle.svg);
+                -webkit-mask-image: url(../src/img/triangle.svg);
+            }
+        }
+        &.has-diamond-image-mask {
+            img {
+                mask-image: url(../src/img/diamond.svg);
+                -webkit-mask-image: url(../src/img/diamond.svg);
+            }
+        }
+        &.has-brush-1-image-mask {
+            img {
+                mask-image: url(../src/img/brush-1.svg);
+                -webkit-mask-image: url(../src/img/brush-1.svg);
+            }
+        }
+        &.has-star-image-mask {
+            img {
+                mask-image: url(../src/img/star.svg);
+                -webkit-mask-image: url(../src/img/star.svg);
+            }
+        }
+    }
+}
